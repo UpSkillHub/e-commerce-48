@@ -45,6 +45,10 @@
     height: 24px;
     width: 1.5rem;
 }
+.profile:hover{
+    cursor: pointer;
+}
+
 .profile-container{
     display: flex;
     flex-direction: row;
@@ -56,6 +60,7 @@
     height: 18rem;
     width: 100%;
 }
+
 .icon-previous{
     position: absolute;
     bottom: 70%;
@@ -155,23 +160,26 @@
     padding: 16px;
     border: hidden;
 }
-.collapse{
+.nav-container{
     display: none;
-    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 58, 58, 0.75);
     position: absolute;
     top: 0%;
-    background-color: hsl(0, 0%, 100%);
-    height: 100%;
-    width: 13rem;
-    left: 0; 
-    gap: 12px;
-    box-shadow: 0px -1px 11px -4px rgba(0, 0, 0, 0.75);
+    left: 0;
     z-index: 1;
 }
-/* .icons{
-    margin-top: 1rem;
-    margin-left: 1rem;
-} */
+.collapse{
+    display: flex;
+    flex-direction: column;
+    width: 14rem;
+    gap: 12px;
+    box-shadow: 0px -1px 11px -4px rgba(0, 0, 0, 0.75);
+    background-color: hsl(0, 0%, 100%);
+    
+}
+
 .navbar{
     color: hsl(0, 0%, 0%);
     display: flex;
@@ -205,6 +213,103 @@
     gap: 10px;
 }
 
+.cart-top{
+    background-color: hsl(26, 100%, 55%);
+    color: hsl(0, 0%, 100%);
+    height: 15px;
+    width: 18px;
+    padding: 5px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    position: relative;
+    right: 18%;
+    top:2% ;
+}
+.report{
+    width: 19.3rem;
+    height:15rem;
+    position: absolute;
+    background-color: hsl(0, 0%, 100%);
+    top: 12%;
+    left: 2%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    border-radius: 15px;
+}
+.line{
+    background-color: hsl(220, 14%, 75%);
+}
+.cart-title{
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    padding: 15px;
+    color: hsl(0, 0%, 0%);
+    border-bottom:1px solid hsl(220, 14%, 75%);
+    
+}
+.cart-content{
+    
+    height: 15rem;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    color: hsl(220, 14%, 75%);
+}
+
+.cart-img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 12px;
+}
+.cart-btn{
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 17rem;
+    padding: 16px;
+    border: hidden;
+}
+.tot{
+    font-weight: bold;
+    color: hsl(0, 0%, 0%);
+}
+.cart-text{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 17rem;
+}
+.check-out{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 12rem;
+    gap: 12px;
+}
+.delete{
+    height: 15px;
+    width: 15px;
+}
+.cart-p{
+    font-size: 13px;
+    color: hsl(219, 9%, 45%);
+}
+
+.cartcheck:hover{
+    cursor: pointer;
+}
 
 @media only screen and (min-width: 426px) {
 
@@ -223,6 +328,10 @@
     right: 2%;
 }
 
+.report{
+    left: 58%;
+}
+
 
 }
 
@@ -235,7 +344,6 @@ body{
     height: 57rem;
 }
 .container{
-    /* justify-content: space-between; */
     width: 85%;
     height: 100%;
 }
@@ -243,11 +351,11 @@ body{
 .body{
     flex-direction: row;
     justify-content: space-between;
-    height: 40rem;
+    height: 55rem;
     border-top:1px solid hsl(220, 14%, 75%);
+    /* border: 1px solid red; */
 }
-.subcontainer{
-    
+.subcontainer{   
     display: flex;
     flex-direction: column;
     justify-content:center ;
@@ -262,6 +370,7 @@ body{
 .icon-previous{
     display: none;
 }
+
 .thumb{
     display: flex;
     justify-content: space-between;
@@ -281,14 +390,26 @@ body{
 .line{
 
 }
-.open{
-    display: none;
+
+.report{
+    /* right: 2%; */
+    /* left: 0%; */
+    left: 70%;
+
 }
 .header{
     padding-left: 0;
     height: 7rem;
-   /* border-bottom:1px solid hsl(220, 14%, 75%);  */
 }
+
+.nav-container{
+    background: transparent;
+    height: 2rem;
+    display: flex;
+    left: 25%;
+    top:4% ;
+}
+
 .cart{
     width: 28px;
     height: 28px;
@@ -300,32 +421,27 @@ body{
 .main-title{
 
 }
+
 .sneaker-title{
     font-size: 30px;
 }
 .collapse{
     display: flex;
     background-color: transparent;
+    width: 25rem;
     box-shadow: none;
-    left: 25%;
-    top:4% ;
-
 }
 .navbar{
     display: flex;
     flex-direction: row;
     color: hsl(220, 14%, 75%);
 }
+.open{
+    display: none;
+}
 .close{
     display: none;
-    
 }
-
-
-/* .subcontainer{
-    display: flex;
-    flex-direction: row;
-} */
 
 .icon-previous{
     
@@ -357,3 +473,4 @@ body{
     font-size: 32px;
 }
 }
+

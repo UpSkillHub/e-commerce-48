@@ -13,25 +13,47 @@
     <div class="container">
         <div class="header">
                 <div class="header-title">
-                    <div class="collapse">
-                        <img src="./images/icon-close.svg" class="close" alt="">
-                        <nav class="navbar">
-                                <h4>Collections</h4>
-                                <h4>Men</h4>
-                                <h4>Women</h4>
-                                <h4>About</h4>
-                                <h4>Contact</h4>
-                        </nav>
+                    <div class="nav-container">
+                        <div class="collapse">
+                            <img src="./images/icon-close.svg" class="close" alt="">
+                            <nav class="navbar">
+                                    <h4>Collections</h4>
+                                    <h4>Men</h4>
+                                    <h4>Women</h4>
+                                    <h4>About</h4>
+                                    <h4>Contact</h4>
+                            </nav>
+                        </div>
                     </div>
                     <div class="main-title">
-                        <img src="./images/icon-menu.svg" class="open" alt="">
+                        <img src="./images/icon-menu.svg" class="open"   alt="">
                         <h2 class="sneaker-title">sneakers</h2>
                     </div>
                 </div>
+                <div class="report" id="report">
+                    <div class="cart-header">
+                        <h5 class="cart-title">Cart</5>
+                    </div>
+                    <hr class="line">
+                    <div class="cart-content" id="cart-cont">
+                            <h5 class="text">Your cart is empty</h5>
+                    </div>
+                    <div class="check-out" id="check-out">
+                        <div class="cart-text" id="cart-text">
+                            <img src="./images/image-product-1-thumbnail.jpg"  class="cart-img" alt="">
+                            <p class="cart-p">Fall Limited Edition Sneakers $125.00 x 3 <span class="tot">$375.00</span></p>
+                            <img src="./images/icon-delete.svg" class="delete">
+                        </div>
+                     
+                        <button class="cart-btn"><h3>chechout</h3></button>
+                    </div>
+                </div>
                 <div class="profile-container">
-                        <img src="./images/icon-cart.svg" class="cart" alt="">
+                        <img src="./images/icon-cart.svg" id="cart"  class="cartcheck" alt="">
+                        <span class="cart-top" id="cart-qtn">0</span>
                         <img src="./images/image-avatar.png" class="profile" alt="">
                 </div>
+                
         </div>
         <hr class= "line">
         <div class="body">
@@ -63,13 +85,13 @@
                     </div>
                     <div class="submit">
                         <div class="amount">
-                            <img src="./images/icon-minus.svg" alt="">
-                            <span class="unit-number">0</span>
-                            <img src="./images/icon-plus.svg" alt="">
+                            <img src="./images/icon-minus.svg" id="minusbtn" alt="">
+                            <span class="unit-number" id="qtn">1</span>
+                            <img src="./images/icon-plus.svg" id="plusbtn" alt="">
                         </div>
                         <button class="btn">
                             <img src="./images/icon-cart.svg" alt="">
-                            <p>Add to cart</p>                        
+                            <p id="add-cart">Add to cart</p>                        
                         </button>
                     </div>
                   
